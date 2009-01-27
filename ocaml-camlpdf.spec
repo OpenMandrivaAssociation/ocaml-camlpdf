@@ -1,7 +1,7 @@
 Name:           ocaml-camlpdf
 Version:        0.3
 Release:        %mkrel 1
-Summary:        CamlPDF allows you to read, write, and manipulate PDF data with OCaml.
+Summary:        CamlPDF allows you to read, write, and manipulate PDF data with OCaml
 Group:          Development/Other
 License:        BSD
 URL:            http://freshmeat.net/projects/camlpdf/
