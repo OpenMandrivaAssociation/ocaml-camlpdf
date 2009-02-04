@@ -1,5 +1,5 @@
 Name:           ocaml-camlpdf
-Version:        0.3
+Version:        0.4
 Release:        %mkrel 1
 Summary:        CamlPDF allows you to read, write, and manipulate PDF data with OCaml
 Group:          Development/Other
