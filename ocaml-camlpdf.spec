@@ -44,6 +44,8 @@ developing applications that use %{name}.
 %setup -q -n camlpdf-%{version}
 %patch0 -p 0
 cp %{SOURCE1} META.in
+# prevent erasing it if it appears in a futur version
+if [ -f META ] ; then exit 1; fi
 sed -e 's/@VERSION@/%{version}/g' < META.in > META
 echo "print_int (Sys.word_size)" > word_size.ml
 
