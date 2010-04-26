@@ -44,7 +44,7 @@ developing applications that use %{name}.
 cp %{SOURCE1} META.in
 
 %build
-make
+make CFLAGS=""
 make htdoc
 make psdoc
 gzip --best doc/camlpdf/latex/doc.ps
