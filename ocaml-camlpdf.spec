@@ -7,6 +7,7 @@ License:        BSD
 URL:            http://freshmeat.net/projects/camlpdf/
 Source0:        http://www.coherentgraphics.co.uk/camlpdf-%{version}.tar.bz2
 Source1:        camlpdf-META.in
+Patch0:         camlpdf-0.5-makefile-arch-cflags.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:  ocaml
 BuildRequires:  zlib-devel
@@ -41,15 +42,16 @@ developing applications that use %{name}.
 
 %prep
 %setup -q -n camlpdf-%{version}
+%patch0 -p 0
 cp %{SOURCE1} META.in
+sed -e 's/@VERSION@/%{version}/g' < META.in > META
+echo "print_int (Sys.word_size)" > word_size.ml
 
 %build
-make CFLAGS=""
+make
 make htdoc
 make psdoc
 gzip --best doc/camlpdf/latex/doc.ps
-
-sed -e 's/@VERSION@/%{version}/g' < META.in > META
 
 mkdir -p examples
 cp pdfhello.ml pdfdecomp.ml pdfmerge.ml pdfdraft.ml pdftest.ml  examples/
