@@ -1,0 +1,12 @@
+--- makefile~	2010-03-08 17:30:19.000000000 +0100
++++ makefile	2010-04-26 03:30:58.000000000 +0200
+@@ -42,7 +42,8 @@
+ 
+ CLIBS = z
+ 
+-CFLAGS = -m32
++WS := $(shell ocaml word_size.ml)
++CFLAGS = -m$(WS)
+ 
+ #Uncomment for debug build
+ #OCAMLNCFLAGS = -g
