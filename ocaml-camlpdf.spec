@@ -93,3 +93,28 @@ rm -rf %{buildroot}
 %{_libdir}/ocaml/camlpdf/*.cmxa
 %{_libdir}/ocaml/camlpdf/*.mli
 
+
+
+%changelog
+* Mon Apr 26 2010 Florent Monnier <blue_prawn@mandriva.org> 0.5-2mdv2010.1
++ Revision: 539364
+- incremented mkrel
+- prevent erasing a futur META file
+- setting arch correctly
+- clear -m32 option from CFLAGS
+- update to new version 0.5
+
+* Sun Jun 28 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.4-2mdv2010.0
++ Revision: 390239
+- rebuild
+
+* Wed Feb 04 2009 Florent Monnier <blue_prawn@mandriva.org> 0.4-1mdv2009.1
++ Revision: 337521
+- updated version
+
+* Tue Jan 27 2009 Florent Monnier <blue_prawn@mandriva.org> 0.3-1mdv2009.1
++ Revision: 334521
+- summary-ended-with-dot
+- import ocaml-camlpdf
+
+

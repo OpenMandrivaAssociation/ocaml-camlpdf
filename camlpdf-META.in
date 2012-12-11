@@ -1,0 +1,6 @@
+name="camlpdf"
+version="@VERSION@"
+description="OCaml library for reading, writing and manipulating Adobe portable document files."
+requires="unix bigarray str"
+archive(byte)="camlpdf.cma"
+archive(native)="camlpdf.cmxa"
