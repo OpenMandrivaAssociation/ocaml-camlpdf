@@ -4,7 +4,7 @@ Release:        %mkrel 2
 Summary:        CamlPDF allows you to read, write, and manipulate PDF data with OCaml
 Group:          Development/Other
 License:        BSD
-URL:            http://freshmeat.net/projects/camlpdf/
+URL:            https://freshmeat.net/projects/camlpdf/
 Source0:        http://www.coherentgraphics.co.uk/camlpdf-%{version}.tar.bz2
 Source1:        camlpdf-META.in
 Patch0:         camlpdf-0.5-makefile-arch-cflags.patch
