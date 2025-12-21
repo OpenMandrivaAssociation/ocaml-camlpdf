@@ -9,6 +9,7 @@ Source0:        http://www.coherentgraphics.co.uk/camlpdf-%{version}.tar.bz2
 Source1:        camlpdf-META.in
 Patch0:         camlpdf-0.5-makefile-arch-cflags.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
+BuildRequires:	make
 BuildRequires:  ocaml
 BuildRequires:  zlib-devel
 BuildRequires:  tetex-latex
